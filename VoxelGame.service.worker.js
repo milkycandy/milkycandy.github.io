@@ -4,20 +4,20 @@
 // Incrementing CACHE_VERSION will kick off the install event and force
 // previously cached resources to be updated from the network.
 /** @type {string} */
-const CACHE_VERSION = '1727282390|101148978';
+const CACHE_VERSION = '1727284064|79058066';
 /** @type {string} */
 const CACHE_PREFIX = 'Voxel Game-sw-cache-';
 const CACHE_NAME = CACHE_PREFIX + CACHE_VERSION;
 /** @type {string} */
-const OFFLINE_URL = 'mc.offline.html';
+const OFFLINE_URL = 'VoxelGame.offline.html';
 /** @type {boolean} */
 const ENSURE_CROSSORIGIN_ISOLATION_HEADERS = true;
 // Files that will be cached on load.
 /** @type {string[]} */
-const CACHED_FILES = ["mc.html","mc.js","mc.offline.html","mc.icon.png","mc.apple-touch-icon.png","mc.worker.js","mc.audio.worklet.js"];
+const CACHED_FILES = ["VoxelGame.html","VoxelGame.js","VoxelGame.offline.html","VoxelGame.icon.png","VoxelGame.apple-touch-icon.png","VoxelGame.worker.js","VoxelGame.audio.worklet.js"];
 // Files that we might not want the user to preload, and will only be cached on first load.
 /** @type {string[]} */
-const CACHABLE_FILES = ["mc.wasm","mc.pck"];
+const CACHABLE_FILES = ["VoxelGame.wasm","VoxelGame.pck"];
 const FULL_CACHE = CACHED_FILES.concat(CACHABLE_FILES);
 
 self.addEventListener('install', (event) => {
